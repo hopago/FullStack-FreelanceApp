@@ -1,0 +1,78 @@
+.reviewItem {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 20px 0px;
+
+    .user {
+
+        .profilePicture {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .info {
+
+            span {
+                font-weight: 700;
+            }
+
+            .country {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: gray;
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                    object-fit: contain;
+                }
+
+                span {
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+
+    .stars {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        img {
+            width: 14px;
+            height: 14px;
+        }
+
+        span {
+            font-size: 14px;
+            font-weight: bold;
+            color: #ffc108;
+        }
+    }
+
+    p {
+
+    }
+
+    .helpful {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img {
+            width: 14px;
+            cursor: pointer;
+        }
+
+        span {
+            font-size: 14px;
+            font-weight: 500;
+            color: #555;
+        }
+    }
+}

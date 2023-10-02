@@ -1,0 +1,35 @@
+.categorycard {
+    width: 252px;
+    height: 344px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .desc {
+        font-weight: 300;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+
+    .title {
+        font-weight: 500;
+        font-size: 24px;
+        position: absolute;
+        left: 15px;
+        top: 35px;
+    }
+
+    &:hover {
+        opacity: 0.5;
+    }
+}

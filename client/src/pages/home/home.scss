@@ -1,0 +1,108 @@
+.home {
+    font-family: 'Nanum Gothic', sans-serif;
+
+    .features {
+        background-color: #f1fdf7;
+        display: flex;
+        justify-content: center;
+        padding: 100px 0px;
+
+        &.dark {
+            background-color: #0d084d;
+            color: white;
+
+            h1 {
+                color: white !important;
+            }
+
+            p {
+                color: white !important;
+                margin-bottom: 20px;
+            }
+
+            .title {
+                color: white !important;
+                font-weight: 300;
+                font-size: 14px;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            button {
+                background-color: #8294C4;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 10px;
+                border: none;
+                font-size: 16px;
+                cursor: pointer;
+                margin-top: 20px;
+                width: max-content;
+            }
+        }
+
+        .container {
+            width: 1400px;
+            display: flex;
+            align-items: center;
+            gap: 200px;
+
+            &.row-reverse {
+                flex-direction: row-reverse;
+            }
+
+            .item {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 12.5px;
+
+                &:first-child {
+                    flex: 2;
+                }
+
+                &:last-child {
+                    flex: 3;
+                }
+
+                h1 {
+                    text-wrap: balance;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: gray;
+                    letter-spacing: 1.5px;
+                    line-height: 24px;
+                    text-wrap: balance;
+                }
+
+                .title {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: #8294C4;
+
+                    img {
+                        width: 24px;
+                        height: 24px;
+                        object-fit: cover;
+                    }
+                }
+
+                video {
+                    width: 720px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
