@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import { baseReq } from "../../requestMethod";
 import Reviews from "../../components/reviews/Reviews";
+import { Link } from 'react-router-dom';
 
 
 const Gig = () => {
@@ -151,7 +152,9 @@ const Gig = () => {
                 </div>
               ))}
             </div>
-            <button>Continue</button>
+            <Link to={`/pay/${id}`} className='link'>
+              <button>Continue</button>
+            </Link>
           </div>
         </div>
       )}

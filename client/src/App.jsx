@@ -13,12 +13,14 @@ import MyGigs from "./pages/myGigs/MyGigs";
 import Message from "./pages/message/Message";
 import Messages from "./pages/messages/Messages";
 import Add from "./pages/add/Add";
+import Success from './pages/success/Success';
 import Login from './pages/login/Login';
 import Register from './pages/register/Register';
 import {
   QueryClient,
   QueryClientProvider,
 } from '@tanstack/react-query';
+import Pay from "./pages/pay/Pay";
 
 
 const queryClient = new QueryClient();
@@ -71,6 +73,14 @@ const router = createBrowserRouter([
       {
         path: '/message/:id',
         element: <Message />
+      },
+      {
+        path: '/pay/:id',
+        element: <Pay />
+      },
+      {
+        path: '/success',
+        element: <Success />
       },
       {
         path: "/register",

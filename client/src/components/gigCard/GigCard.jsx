@@ -11,12 +11,14 @@ const GigCard = ({ item }) => {
     queryFn: () =>
       authReq
         .get(
-          `/users/${item.userId}`
+          `/users/single/${item.userId}`
         )
         .then((res) => {
           return res.data;
         }),
   });
+
+  console.log(data);
 
   return (
     <Link to={`/gig/${item._id}`} className="link">
