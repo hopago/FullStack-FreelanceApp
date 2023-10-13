@@ -1,14 +1,17 @@
 import express from 'express';
 import {
-    createOrder,
-    getOrders
+    getOrders,
+    intent,
+    confirm
 } from '../controllers/order.js';
 import { verifyToken } from '../middleware/jwt.js';
 
 const router = express.Router();
 
-router.post("/:gigId", verifyToken, createOrder);
-
 router.get("/", verifyToken, getOrders);
+
+router.post("/create-payment-intent/:gigId", verifyToken, intent);
+
+router.put("/", verifyToken, confirm);
 
 export default router;
